@@ -9,7 +9,7 @@ class RAGModel:
     def __init__(self, db_params):
         self.db_params = db_params
         # Configure Gemini API
-        genai.configure(api_key="AIzaSyAYDLEUWdNh7bvQd0KkcA0q0lFnzyNmZkA")
+        genai.configure(api_key="API KEY")
         self.client = genai.GenerativeModel('gemini-2.0-flash')
 
     def _get_db_schema(self):
